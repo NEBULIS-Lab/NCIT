@@ -1,3 +1,4 @@
+import Icon from './icon';
 import {useLanguage} from '../i18n';
 import LiveDemo from './live-demo';
 export default function HeroHome() {
@@ -9,7 +10,7 @@ export default function HeroHome() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <p className="hero-eyebrow" data-aos="fade-up">NCIT <span aria-hidden="true">/</span> {t('companyShort')}</p>
-          <p className="hero-company" data-aos="fade-up" data-aos-delay="60">{t('companyName')}</p>
+          <p lang="en" className="hero-company" data-aos="fade-up" data-aos-delay="60">{t('companyName')}</p>
           <div className="pb-12 text-center md:pb-20">
             <h1
               className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
@@ -33,9 +34,7 @@ export default function HeroHome() {
                   >
                     <span className="relative inline-flex items-center">
                       {t('heroAction')}
-                      <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
+                      <Icon name="arrow-right" className="action-icon"/>
                     </span>
                   </a>
                 </div>

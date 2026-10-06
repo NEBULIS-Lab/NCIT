@@ -1,3 +1,4 @@
+import Icon from './components/icon';
 import {useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -27,8 +28,8 @@ export default function App(){
    <a className="skip-link" href="#main">{t('skip')}</a><Header/>
    <main id="main"><PageIllustration/><HeroHome/><Institutions/><Workflows/><Challenges/><Features/><Team/><Roadmap/><Partnership/><Cta/></main>
    <footer className="site-footer mx-auto w-full max-w-6xl px-4 sm:px-6">
-     <div className="footer-identity"><a className="brand" href="#top"><img src="./assets/images/nebulis-mark.webp" alt="" width="30" height="30"/><strong>NCIT</strong></a><p>{t('companyName')}</p>{language==='zh'&&<p className="company-english" lang="en">{t('companyNameEn')}</p>}<small>{t('footerStatus')}</small></div>
-     <div><a href="#partnership">{t('navPartnership')} ↗</a><a href="https://nebulis-lab.com/" target="_blank" rel="noopener noreferrer">NEBULIS Lab ↗</a><a href="#top">{t('backTop')} ↑</a></div>
+     <div className="footer-identity"><a className="brand" href="#top"><img src="./assets/images/nebulis-mark.webp" alt="" width="30" height="30"/><strong>NCIT</strong></a><p className="footer-company" lang="en">{t('companyName')}</p><small>{t('footerStatus')}</small></div>
+     <div><a href="#partnership">{t('navPartnership')} <Icon name="arrow-right"/></a><a href="https://nebulis-lab.com/" target="_blank" rel="noopener noreferrer">NEBULIS Lab <Icon name="arrow-up-right"/></a><a href="#top">{t('backTop')} <Icon name="arrow-up"/></a></div>
    </footer>
  </div>;
 }

@@ -1,3 +1,4 @@
+import Icon from './icon';
 import {useLanguage} from '../i18n';
 export default function Cta() {
   const {t}=useLanguage();
@@ -33,9 +34,7 @@ export default function Cta() {
                 >
                   <span className="relative inline-flex items-center">
                     {t('emailUs')}
-                    <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
-                      -&gt;
-                    </span>
+                    <Icon name="arrow-right" className="action-icon"/>
                   </span>
                 </a>
               </div>

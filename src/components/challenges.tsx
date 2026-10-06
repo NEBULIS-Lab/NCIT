@@ -1,3 +1,4 @@
+import PolicyText from './policy-text';
 import {useLanguage} from '../i18n';
 
 export default function Challenges() {
@@ -7,7 +8,7 @@ export default function Challenges() {
       <div className="challenge-intro" data-aos="fade-up">
         <span className="section-kicker">{t('challengeLabel')}</span>
         <h2 className="gradient-heading">{t('challengeHeading')}</h2>
-        <p>{t('challengeIntro')}</p>
+        <p><PolicyText passage="challengeIntro"/></p>
         <div className="collaboration-motif" aria-hidden="true"><span/><span/><span/><i/></div>
       </div>
       <div className="challenge-list">

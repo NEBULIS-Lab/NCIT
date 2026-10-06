@@ -1,6 +1,6 @@
 const content = {
   zh: {
-    companyName: '广州星云协智科技有限公司',
+    companyName: 'Guangzhou Nebulis Collaborative Intelligence Technology Co., Ltd.',
     companyNameEn: 'Guangzhou Nebulis Collaborative Intelligence Technology Co., Ltd.',
     companyShort: '星云协智',
     institutionLabel: '科研起点',

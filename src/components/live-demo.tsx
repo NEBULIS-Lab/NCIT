@@ -1,3 +1,4 @@
+import Icon from './icon';
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../i18n';
 export default function LiveDemo(){
@@ -21,7 +22,7 @@ export default function LiveDemo(){
  async function fullscreen(){try{document.fullscreenElement?await document.exitFullscreen():await panel.current?.requestFullscreen()}catch{window.open(src,'_blank','noopener,noreferrer')}}
  return <div id="demo" className="demo-anchor" data-aos="fade-up" data-aos-delay="200">
   <div className="live-demo" ref={panel} data-status={status}>
-   <div className="demo-bar"><div className="demo-bar-title"><span className="status-dot"/>{t('liveTitle')}</div><div className="demo-bar-actions"><a href={`./demo1/?lang=${language}`} target="_blank" rel="noopener noreferrer">{t('liveOpen')} ↗</a><button onClick={fullscreen} aria-label={full?t('liveExit'):t('liveFull')}>{full?'↙':'⛶'} <span>{full?t('liveExit'):t('liveFull')}</span></button></div></div>
+   <div className="demo-bar"><div className="demo-bar-title"><span className="status-dot"/>{t('liveTitle')}</div><div className="demo-bar-actions"><a href={`./demo1/?lang=${language}`} target="_blank" rel="noopener noreferrer">{t('liveOpen')} <Icon name="arrow-up-right"/></a><button onClick={fullscreen} aria-label={full?t('liveExit'):t('liveFull')}><Icon name={full?'collapse':'expand'}/> <span>{full?t('liveExit'):t('liveFull')}</span></button></div></div>
    <div className="demo-viewport">
     <iframe key={generation} ref={frame} src={src} title={t('liveTitle')} allow="fullscreen" onLoad={()=>frame.current?.contentWindow?.postMessage({type:'ncit-language',language},location.origin)} onError={()=>setStatus('error')}/>
     {status!=='ready'&&<div className="demo-loading"><img src="./assets/images/demo-poster.webp" alt=""/><div><span className={status==='loading'?'loader':''}/><p role="status">{t(status==='loading'?'liveLoading':'liveFailure')}</p>{status==='error'&&<button onClick={reload}>{t('liveRetry')}</button>}</div></div>}

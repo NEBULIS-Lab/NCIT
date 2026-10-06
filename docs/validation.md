@@ -14,13 +14,21 @@ Validated on 2026-10-07.
 
 ## Identity, content and motion refinement
 
-- The company’s full Chinese and English names match slide 1 of the business deck.
+- The full English company name matches slide 1 of the business deck and is displayed in both language modes.
 - The HKUST (Guangzhou) mark is displayed beside the laboratory identity using the original PPT asset, without changing its colors or proportions.
 - Manufacturing challenges and the four-step partnership workflow are present in both languages.
 - Both languages pass desktop and mobile layout checks from 320 to 1440 CSS pixels, with no horizontal overflow or automated WCAG A/AA violations.
 - Sticky navigation, mobile link dismissal, active section indication and language persistence work.
 - Pointer highlights update without React state updates. Diagram animation pauses outside the viewport; reduced-motion preferences suppress decorative motion.
 - The obsolete chooser, previews and design-selection documents are removed from the source and publication bundle. Necessary third-party notices remain in one notice file.
+
+## Policy links and icon refinement
+
+- Four official policy/information sources are integrated into the existing solutions, manufacturing and partnership introductions in both languages; publication dates and supported claims are recorded in `policy-sources.md`.
+- Each source link opens the official publication in a new tab, uses the surrounding paragraph’s text size and retains keyboard focus styling.
+- Company names, source-link destinations, mobile layout and bilingual rendering were checked.
+- Text-glyph arrows were replaced with consistent SVG icons. Fullscreen entry/exit and the matching icon state pass browser interaction checks.
+- Main-page WCAG A/AA checks still report zero violations in both languages. The demo build remains byte-identical to the previously validated runtime.
 
 ## Demo1 integration
 

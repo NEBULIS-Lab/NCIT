@@ -1,3 +1,5 @@
+import Icon from './icon';
+import PolicyText from './policy-text';
 import Spotlight from './spotlight';
 import {useLanguage} from '../i18n';
 export default function Workflows() {
@@ -18,7 +20,7 @@ export default function Workflows() {
               {t('workHeading')}
             </h2>
             <p className="text-lg text-indigo-200/65">
-              {t('workIntro')}
+              <PolicyText passage="workIntro"/>
             </p>
           </div>
           {/* Spotlight items */}
@@ -35,17 +37,7 @@ export default function Workflows() {
                   className="absolute right-6 top-6 flex h-8 w-8 items-center justify-center rounded-full border border-gray-700/50 bg-gray-800/65 text-gray-200 opacity-0 transition-opacity group-hover/card:opacity-100"
                   aria-hidden="true"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={9}
-                    height={8}
-                    fill="none"
-                  >
-                    <path
-                      fill="#F4F4F5"
-                      d="m4.92 8-.787-.763 2.733-2.68H0V3.443h6.866L4.133.767 4.92 0 9 4 4.92 8Z"
-                    />
-                  </svg>
+                  <Icon name="arrow-right"/>
                 </div>
                 {/* Image */}
                 <img
