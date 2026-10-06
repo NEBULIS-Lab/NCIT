@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","include":["demo/src/**/*.ts","demo/src/**/*.tsx"],"compilerOptions":{"types":["vite/client"],"strict":true,"allowJs":false}}

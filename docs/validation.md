@@ -1,20 +1,36 @@
-# Website validation
+# NCIT Open redesign validation
 
-Validated on 2026-10-06 with a local Chromium browser.
+Validated on 2026-10-07.
 
-- **Content:** 159 translated interface/content keys; language-aware descriptions, navigation and image alternative text.
-- **Layouts:** Chinese and English at 1440, 768, 390 and 320 CSS pixels. No horizontal overflow, failed images, console exceptions or HTTP errors in the tested pages.
-- **Interaction:** Language toggle, persisted preference, URL language override, technology tabs, scene tabs, keyboard arrows/Home/End, mobile navigation, Escape dismissal and resize cleanup.
-- **Accessibility:** Automated axe-core checks against WCAG 2 A/AA and 2.1 A/AA tags reported zero violations in both languages at desktop and mobile widths. This is an automated check, not a certification of complete accessibility.
-- **Media:** Original H.264 video, 1280 × 960, duration 410.2 seconds; playback, pause and seeking to 200 seconds verified. Byte-range requests to the local preview server returned HTTP 206 with the expected content range.
-- **Fallback:** Chinese page content remains available with JavaScript disabled.
-- **Packaging:** JavaScript syntax, local assets, internal anchors and the static distribution package checked. Source slide deck and private working files are excluded.
+## Website
 
-## Screenshots
+- Built from the selected Cruip Open source; upstream revision and original terms are retained.
+- Chinese and English checked at 1440, 768, 390 and 320 CSS pixels without horizontal page overflow.
+- Language selection persists through reload. URL language selection, mobile navigation and Escape dismissal work.
+- Fullscreen entry works through an explicit button click.
+- Main-page automated WCAG A/AA checks report zero violations in both languages. These layout checks isolate the simulation iframe; the actual runtime is verified separately below.
+- No missing main-page assets or script errors during the functional pass.
+- No video element or reference to the prohibited cover background appears in the active website. The cover image and old recording are excluded from the publication bundle.
+- Original Open illustrations, font files and gradient borders were checked in the built output. Scroll and pointer effects retain the template's behavior; reduced-motion preferences disable decorative animation.
 
-- [Chinese desktop homepage](preview-zh.webp)
-- [English desktop homepage](preview-en.webp)
+## Demo1 integration
 
-## Publication status
+- The actual local build loads four physical robot instances and 73 bodies.
+- The complete four-stage assembly sequence reached `complete`, including observed tool striking, with zero physics warnings and no script or asset errors. Reset returned the sequence to idle. This automated run used the runtime’s supported 3× playback speed and moved the inspection camera away during the physics audit; the normal scene view was restored for the final capture.
+- Start, pause, resume and reset operate on the actual simulation.
+- Switching the website language updates the running demo controls without reloading the simulation.
+- Robot, workcell and camera files are served from the same website.
+- The four assembly controllers, scene layout, planning and sequence logic match the provided source hashes.
+- The original fixed control clock is applied to the pinned mujoco-react runtime during the demo build.
+- Graphics/runtime errors surface as a reloadable demo error instead of a permanently blank frame.
 
-Source delivery and public website hosting are separate. At initial delivery, GitHub Pages was not configured on the repository. The included workflow validates the source and prepares a Pages artifact, then deploys automatically when Pages has been enabled. Follow the README’s first-publication steps to activate hosting.
+## Repeatable checks
+
+```bash
+npm run check
+npm run typecheck
+npm run build
+git diff --check
+```
+
+The build produces the main website and `demo1/` together. The GitHub Actions workflow runs dependency installation, source checks, type checks and both builds before publication.

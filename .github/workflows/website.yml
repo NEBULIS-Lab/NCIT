@@ -22,8 +22,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Install pinned dependencies
+        run: npm ci --no-audit --no-fund
       - name: Check content and assets
         run: node scripts/check.mjs
+      - name: Check types
+        run: npm run typecheck
       - name: Package website
         run: node scripts/build.mjs
       - uses: actions/upload-pages-artifact@v3

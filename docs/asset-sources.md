@@ -1,10 +1,9 @@
 # 图片与媒体来源 / Asset provenance
 
-网站素材来自用户提供的 12 页《商业计划书.pptx》。图片已逐一查看，并结合页内文字和布局核对用途；下表中的人物姓名来自原幻灯片的配对文字，并非仅凭人脸推断。网页图片转换为 WebP、缩小到适合页面的尺寸；视频保留原嵌入文件。
+网站素材来自用户提供的 12 页《商业计划书.pptx》。图片已逐一查看，并结合页内文字和布局核对用途；下表中的人物姓名来自原幻灯片的配对文字，并非仅凭人脸推断。网页图片转换为 WebP、缩小到适合页面的尺寸；新版直接加载用户提供的 Demo1 仿真，原视频不再分发。
 
 | 网站文件 | PPT 原始文件 | 页码 | 识别内容与使用方式 |
 | --- | --- | --- | --- |
-| `hero-workcell.webp` | `image1.png` | 1 | 多机械臂围绕装配工位；首页概念示意，未标为团队真机成果 |
 | `nebulis-mark.webp` / `favicon.png` | `image3.png` | 多页 | NEBULIS 渐变无限符号标识，保留透明背景 |
 | `ningxin-su.webp` | `image16.png` | 5 | 苏宁馨团队肖像，与原页姓名对应 |
 | `shuaijun-liu.webp` | `image17.jpeg` | 5 | 刘帅军团队肖像，与原页姓名对应 |
@@ -14,7 +13,6 @@
 | `demo-poster.webp` | `image29.png` | 9 | 嵌入视频的四臂仿真海报帧 |
 | `research-multiarm.webp` | `image23.png` | 7 | 多臂协作连续仿真画面，对应通信方法与 VLA 仿真训练 |
 | `research-real-world.webp` | `image20.jpeg` | 7 | 桌面水果任务真机照片，对应数据采集与模型微调 |
-| `multi-arm-demo.mp4` | `media1.mp4` | 9 | 原始嵌入的四臂铝型材装配仿真演示视频 |
 
 PPT 中的行业场景照片、市场图表、股权和资金图表没有用于网站；没有将行业示意图片包装为已交付客户案例。原始演示文件不随网站仓库分发。
 
@@ -22,4 +20,5 @@ PPT 中的行业场景照片、市场图表、股权和资金图表没有用于�
 
 联系邮箱和实验室链接核对自 [NEBULIS Lab 官方网站](https://nebulis-lab.com/)（2026-10-06）。网站未新增第三方客户标识、客户评价或虚构联系方式。
 
-No third-party website template was copied. The layout and code are original; supplied media remain subject to their original ownership. Public email attribution: the NEBULIS Lab website.
+
+按用户要求，PPT 第 1 页的背景照片（image1.png）已从发布素材移除；不用于新版网站、分享图或其他页面。页面排版、装饰 SVG、字体与动效基于用户选定的 Cruip Open，来源见 THIRD_PARTY_NOTICES.md。

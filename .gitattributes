@@ -1,0 +1,5 @@
+# Robot meshes are generated model assets, not reviewable source text.
+*.obj -text -diff
+*.stl -text -diff
+*.glb -text -diff
+demo/public/assets/** linguist-vendored

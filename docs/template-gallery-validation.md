@@ -12,7 +12,7 @@ Checked on 2026-10-07 for the replacement template-selection homepage.
 - Automated WCAG A/AA checks report zero violations for both language variants and the preview dialog.
 - Screenshots of the desktop and mobile layouts were visually reviewed.
 - No browser script errors or failed local asset requests during the functional pass.
-- The previous NCIT site remains available at `previous.html`.
+- At the chooser stage, the original NCIT page was archived. It was removed during the Open redesign to exclude the prohibited cover image.
 - `node scripts/check.mjs`, `node scripts/build.mjs` and `git diff --check` pass.
 
 This validates the chooser. Final adaptation of NCIT content and motion follows the user’s template selection.

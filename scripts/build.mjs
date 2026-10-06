@@ -1,11 +1,9 @@
-import { cpSync, mkdirSync, rmSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const output = resolve(root, '.site');
-rmSync(output, { recursive: true, force: true });
-mkdirSync(output, { recursive: true });
-for (const file of ['index.html', 'previous.html', 'gallery', 'styles.css', 'app.js', 'content.js', '.nojekyll', 'assets']) {
-  cpSync(resolve(root, file), resolve(output, file), { recursive: true });
+import { spawnSync } from 'node:child_process';
+import { writeFile, cp } from 'node:fs/promises';
+for (const config of ['vite.config.ts','vite.demo.config.ts']) {
+  const result = spawnSync(process.execPath, ['node_modules/vite/bin/vite.js','build','--config',config], {stdio:'inherit'});
+  if (result.status !== 0) process.exit(result.status || 1);
 }
-console.log('Static website packaged in .site/');
+await writeFile('.site/.nojekyll','');
+await cp('THIRD_PARTY_NOTICES.md','.site/THIRD_PARTY_NOTICES.md');
+console.log('Built NCIT and self-contained Demo1 in .site/');
