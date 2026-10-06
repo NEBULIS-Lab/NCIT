@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import {patchPhysicsControl} from './fixedPhysicsControlPlugin.mjs';
 import copy from '../src/copy.js';
 assert.deepEqual(Object.keys(copy.zh).sort(),Object.keys(copy.en).sort(),'Source copy language parity');
-for(const file of ['public/assets/images/nebulis-mark.webp','public/assets/images/demo-poster.webp','public/open/images/page-illustration.svg','public/open/fonts/nacelle-regular.woff2','demo/public/assets/franka-assembly2/scene.xml','demo/public/assets/franka-assembly2/LICENSE','demo/public/assets/assembly-cameras/THIRD_PARTY_NOTICES.md'])assert.ok((await stat(file)).size>0,file);
+for(const file of ['public/assets/images/nebulis-mark.webp','public/assets/images/hkust-gz.png','public/assets/images/demo-poster.webp','public/assets/theme/images/page-illustration.svg','public/assets/theme/fonts/nacelle-regular.woff2','demo/public/assets/franka-assembly2/scene.xml','demo/public/assets/franka-assembly2/LICENSE','demo/public/assets/assembly-cameras/THIRD_PARTY_NOTICES.md'])assert.ok((await stat(file)).size>0,file);
 const app=await readFile('src/components/live-demo.tsx','utf8');
 assert.ok(app.includes('./demo1/?lang='),'Self-hosted live Demo1');
 assert.ok(app.includes('event.origin!==location.origin'),'Origin check for iframe messages');
@@ -15,4 +15,4 @@ const patched=patchPhysicsControl(runtime);assert.ok(patched.includes('assemblyC
 const manifest=JSON.parse(await readFile('demo/physics-sources.json','utf8'));
 for(const [file,hash] of Object.entries(manifest))assert.equal(createHash('sha256').update(await readFile('demo/src/'+file)).digest('hex'),hash,'Original physics retained: '+file);
 for(const image of ['simulation-workcell','lab-assembly','research-real-world','ningxin-su','shuaijun-liu','qingkai-yang'])assert.ok((await stat('public/assets/images/'+image+'.webp')).size>0,image);
-console.log('PASS: bilingual source copy, Open assets, live Demo1 paths, original physics, fixed control clock, and excluded cover/video.');
+console.log('PASS: bilingual source copy, brand assets, live Demo1 paths, original physics, fixed control clock, and excluded cover/video.');

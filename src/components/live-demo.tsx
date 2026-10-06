@@ -20,7 +20,7 @@ export default function LiveDemo(){
  function reload(){initialLang.current=language;setStatus('loading');setGeneration(v=>v+1)}
  async function fullscreen(){try{document.fullscreenElement?await document.exitFullscreen():await panel.current?.requestFullscreen()}catch{window.open(src,'_blank','noopener,noreferrer')}}
  return <div id="demo" className="demo-anchor" data-aos="fade-up" data-aos-delay="200">
-  <div className="live-demo" ref={panel}>
+  <div className="live-demo" ref={panel} data-status={status}>
    <div className="demo-bar"><div className="demo-bar-title"><span className="status-dot"/>{t('liveTitle')}</div><div className="demo-bar-actions"><a href={`./demo1/?lang=${language}`} target="_blank" rel="noopener noreferrer">{t('liveOpen')} ↗</a><button onClick={fullscreen} aria-label={full?t('liveExit'):t('liveFull')}>{full?'↙':'⛶'} <span>{full?t('liveExit'):t('liveFull')}</span></button></div></div>
    <div className="demo-viewport">
     <iframe key={generation} ref={frame} src={src} title={t('liveTitle')} allow="fullscreen" onLoad={()=>frame.current?.contentWindow?.postMessage({type:'ncit-language',language},location.origin)} onError={()=>setStatus('error')}/>

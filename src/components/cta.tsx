@@ -1,4 +1,3 @@
-// Adapted from Cruip Open.
 import {useLanguage} from '../i18n';
 export default function Cta() {
   const {t}=useLanguage();
@@ -10,7 +9,7 @@ export default function Cta() {
       >
         <img
           className="max-w-none"
-          src="./open/images/blurred-shape.svg"
+          src="./assets/theme/images/blurred-shape.svg"
           width={760}
           height={668}
           alt="Blurred shape"
@@ -27,7 +26,7 @@ export default function Cta() {
             </h2>
             <p className="mb-8 text-lg text-indigo-200/75">{t('contactIntro')}</p>
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay={400}>
+              <div data-aos="fade-up" data-aos-delay={120}>
                 <a
                   className="btn group mb-4 w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                   href="mailto:ningxinsu@hkust-gz.edu.cn?subject=NCIT%20Collaboration"
@@ -40,7 +39,7 @@ export default function Cta() {
                   </span>
                 </a>
               </div>
-              <div data-aos="fade-up" data-aos-delay={600}>
+              <div data-aos="fade-up" data-aos-delay={200}>
                 <a
                   className="btn relative w-full bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
                   href="https://nebulis-lab.com/" target="_blank" rel="noopener noreferrer"

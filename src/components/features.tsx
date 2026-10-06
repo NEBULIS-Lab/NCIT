@@ -1,4 +1,3 @@
-// Adapted from Cruip Open: section layout, feature grid, original SVG icons and AOS.
 import {useLanguage} from '../i18n';
 import WorldModel from './world-model';
 export default function Features() {
@@ -11,7 +10,7 @@ export default function Features() {
       >
         <img
           className="max-w-none"
-          src="./open/images/blurred-shape-gray.svg"
+          src="./assets/theme/images/blurred-shape-gray.svg"
           width={760}
           height={668}
           alt="Blurred shape"
@@ -23,7 +22,7 @@ export default function Features() {
       >
         <img
           className="max-w-none"
-          src="./open/images/blurred-shape.svg"
+          src="./assets/theme/images/blurred-shape.svg"
           width={760}
           height={668}
           alt="Blurred shape"

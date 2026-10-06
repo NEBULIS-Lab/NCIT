@@ -1,4 +1,3 @@
-// Adapted from Cruip Open: original spotlight card structure and motion.
 import Spotlight from './spotlight';
 import {useLanguage} from '../i18n';
 export default function Workflows() {

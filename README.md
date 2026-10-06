@@ -1,16 +1,20 @@
 # NCIT · 星云协智
 
-A bilingual company/project website adapted from **Cruip Open**, with the original user-provided **Demo1** running directly in the browser.
+广州星云协智科技有限公司
 
-**Live:** https://nebulis-lab.com/NCIT/
+Guangzhou Nebulis Collaborative Intelligence Technology Co., Ltd.
 
-## What is included
+面向柔性制造的多机械臂协同智能。网站提供公司、技术、研发团队和合作路径的中英文介绍，以及可直接交互的四臂装配演示。
 
-- Open's dark layout, animated gradient headings, original decorative illustrations, scroll reveals and pointer spotlight cards.
-- Chinese/English navigation and content, including the embedded demo controls.
-- Self-hosted Demo1: four physical robot instances, the original assembly sequence, orbit/zoom, run, pause, reset, camera views and full screen. The page loads the actual simulation; no video player is used.
-- Product, technology, laboratory images, team and development roadmap adapted from the supplied business deck.
-- The business deck's cover background photograph is excluded. The old website and video are no longer published.
+**Website:** https://nebulis-lab.com/NCIT/
+
+## Features
+
+- Chinese and English content, with synchronized controls in the live demo.
+- Interactive four-arm assembly: orbit, zoom, run, pause, reset, camera views and full screen.
+- Shared world model, manufacturing challenges, research foundations, team, roadmap and partnership workflow.
+- Responsive navigation, scroll transitions and pointer effects with reduced-motion support.
+- Company and institutional identity drawn from the supplied business deck.
 
 ## Development
 
@@ -19,29 +23,24 @@ Requires Node.js **22.12 or later**.
 ```bash
 npm ci
 npm run check
+npm run typecheck
 npm run build
 npm run preview
 ```
 
 The complete website is served at http://127.0.0.1:4176/. `npm run dev` starts the main Vite app; use the build preview for the integrated demo. `node scripts/serve.mjs 8080 .site` serves a built copy on another port.
 
-Two Vite builds produce `.site/` and `.site/demo1/`. All paths are relative, including the demo's robot assets, so GitHub Pages can serve the project under `/NCIT/`. The Pages workflow installs locked dependencies, validates sources and builds both applications before deploying.
+Two Vite builds produce `.site/` and `.site/demo1/`. All paths are relative, including the robot assets, so GitHub Pages serves the project under `/NCIT/`. The workflow installs locked dependencies, validates sources and builds both applications before deploying.
 
-## Source and design
+## Structure
 
-- `src/components/`: Open template components adapted for NCIT.
-- `src/i18n.tsx`, `src/copy.js`: bilingual copy and persistence.
-- `public/assets/`: selected images from the business deck; no cover image.
-- `public/open/`: original Open decorative SVGs and fonts.
-- `demo/src/`: supplied Demo1 runtime, with an NCIT embed presentation.
-- `scripts/fixedPhysicsControlPlugin.mjs`: original reproducible fixed-control-clock adaptation; required for Demo1 physics.
-- `demo/physics-sources.json`: hashes for the unmodified source physics and controllers.
-- `docs/open-template/`: exact upstream template revision and terms.
-- `THIRD_PARTY_NOTICES.md`: template, dependency and robot-asset attribution.
-- `templates.html`: the previous template chooser, retained as a secondary page.
+- `src/components/`: website sections and interactions.
+- `src/i18n.tsx`, `src/copy.js`, `src/content.ts`: bilingual content and preferences.
+- `public/assets/`: brand marks, laboratory photographs, team portraits, illustrations and fonts.
+- `demo/src/`: embedded simulation.
+- `scripts/fixedPhysicsControlPlugin.mjs`: fixed control clock for the simulation.
+- `demo/physics-sources.json`: hashes for the original physics and controllers.
+- `docs/asset-sources.md`: image provenance and content sources.
+- `THIRD_PARTY_NOTICES.md`: third-party notices.
 
-The main site and demo communicate only within the same origin. Language updates preserve simulation state. The simulation pauses when its panel leaves the viewport or the document becomes hidden. Camera thumbnails are collapsed initially to keep the workcell visible.
-
-Template source: https://github.com/cruip/open-react-template
-
-Demo source: https://github.com/Shuaijun-LIU/web-robot-example-0
+The website and demo communicate within the same origin. Language changes preserve simulation state. Simulation activity pauses when the panel leaves the viewport or the document becomes hidden.
