@@ -3,141 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101116">
-  <meta name="description" content="星云协智 NCIT：以共享世界模型连接多机械臂，让非标制造拥有可扩展、可重配置的协同智能。香港科技大学（广州）科技初创项目。">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="星云协智 NCIT — 让多臂协作，拥有共同的智能">
-  <meta property="og:description" content="世界模型驱动的多机械臂协同智能，面向高混低量的柔性制造。">
-  <title>星云协智 NCIT — 让多臂协作，拥有共同的智能</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preload" as="image" href="assets/images/hero-workcell.webp" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css">
-  <script src="content.js" defer></script>
-  <script src="app.js" defer></script>
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="为 NCIT 星云协智选择现成网站模板：6 个真实模板、官方演示录屏、免费与付费标注。">
+  <title>NCIT · 网站模板选择</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="gallery/gallery.css">
+  <script src="gallery/templates.js" defer></script>
+  <script src="gallery/gallery.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip">跳转到主要内容</a>
-  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
-    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></symbol>
-    <symbol id="icon-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l2-2"/></symbol>
-    <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></symbol>
-    <symbol id="icon-cycle" viewBox="0 0 24 24"><path d="M20 7a9 9 0 0 0-15-2L2 8m0-6v6h6M4 17a9 9 0 0 0 15 2l3-3m0 6v-6h-6"/></symbol>
-    <symbol id="icon-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
-    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
-    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
-  </defs></svg>
-
-  <header class="site-header">
-    <div class="header-inner container">
-      <a class="brand" href="#" aria-label="NCIT 星云协智">
-        <img src="assets/images/nebulis-mark.webp" width="44" height="44" alt="">
-        <span class="brand-word">NEBULIS<span class="brand-sub">COLLABORATIVE INTELLIGENCE</span></span>
-        <span class="brand-divider"></span><span class="brand-project">NCIT</span>
-      </a>
-      <nav class="desktop-nav" aria-label="主导航" data-i18n-aria="mainNav">
-        <a href="#solution" data-i18n="navSolution">解决方案</a>
-        <a href="#technology" data-i18n="navTech">核心技术</a>
-        <a href="#demo" data-i18n="navDemo">项目演示</a>
-        <a href="#team" data-i18n="navTeam">关于团队</a>
-      </nav>
-      <div class="header-actions">
-        <button class="language-switch" id="language-switch" type="button" aria-label="Switch to English"><span aria-hidden="true">◎</span><span id="language-label">EN</span></button>
-        <a class="button button-small button-light header-contact" href="#contact" data-i18n="contactUs">合作咨询</a>
-        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="打开导航" data-i18n-aria="openMenu"><span></span><span></span></button>
-      </div>
-    </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" data-i18n-aria="mobileNav" hidden>
-      <a href="#solution" data-i18n="navSolution">解决方案</a><a href="#technology" data-i18n="navTech">核心技术</a><a href="#demo" data-i18n="navDemo">项目演示</a><a href="#team" data-i18n="navTeam">关于团队</a><a href="#contact" data-i18n="contactUs">合作咨询</a>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="hero dark-section" aria-labelledby="hero-title">
-      <div class="hero-image"><img src="assets/images/hero-workcell.webp" alt="多机械臂围绕共享工位进行框架装配的概念场景" data-i18n-alt="heroAlt" width="1672" height="941" fetchpriority="high"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-content container">
-        <p class="eyebrow hero-eyebrow"><span class="small-line"></span><span data-i18n="heroEyebrow">星云协智 · 多机械臂协同智能</span></p>
-        <h1 id="hero-title"><span data-i18n="heroLine1">让多臂协作，</span><span class="accent-text" data-i18n="heroLine2">拥有共同的智能。</span></h1>
-        <p class="hero-description" data-i18n="heroDesc">以共享世界模型连接感知、决策与行动，让多只机械臂理解同一个世界，协同完成复杂制造任务。</p>
-        <div class="hero-buttons"><a class="button button-primary" href="#solution" data-i18n="explore">探索解决方案</a><a class="button button-glass" href="#demo"><svg class="icon play-icon"><use href="#icon-play"/></svg><span data-i18n="watchDemo">观看协作演示</span></a></div>
-        <div class="hero-tags"><span data-i18n="heroTag1">共享世界模型</span><span data-i18n="heroTag2">三 / 四臂协作</span><span data-i18n="heroTag3">柔性制造</span></div>
-      </div>
-      <div class="hero-bottom container"><span class="hero-bottom-label">01 / COLLABORATIVE INTELLIGENCE</span><span class="image-caption" data-i18n="conceptCaption">多臂协作工位 · 概念示意</span></div>
+  <a class="skip" href="#templates" data-t="skip">跳转到模板</a>
+  <header class="header"><div class="container header-inner">
+    <a class="brand" href="./"><img src="assets/images/nebulis-mark.webp" alt="" width="36" height="36"><strong>NCIT<span data-t="brand">网站模板选择</span></strong></a>
+    <nav class="stages" aria-label="项目阶段"><span class="current" data-t="stage">01 选模板</span><span data-t="next">02 内容与动效改造</span><span data-t="last">03 发布官网</span></nav>
+    <button class="lang" id="language" type="button" aria-label="Switch to English">EN</button>
+  </div></header>
+  <main class="container">
+    <section class="intro"><div><p class="eyebrow" data-t="eyebrow">NCIT / DESIGN SHORTLIST</p><h1 data-t="heading">先选模板，再做网站。</h1><p class="lead" data-t="intro">6 个现成模板。直接看真实页面、原生动效，再选你喜欢的方向。</p><p class="intro-note" data-t="sub">选定后沿用模板的布局与动画，换入星云协智的中英文内容、实拍和协作视频。</p></div><div class="intro-index" aria-hidden="true"><span>06</span><small>CURATED TEMPLATES</small></div></section>
+    <section id="templates" aria-label="候选模板">
+      <div class="toolbar"><div class="filters" role="group" aria-label="筛选模板">
+        <button type="button" class="active" data-filter="all" aria-pressed="true" data-t="all">全部模板</button><button type="button" data-filter="free" aria-pressed="false" data-t="free">免费模板</button><button type="button" data-filter="paid" aria-pressed="false" data-t="paid">付费模板</button><button type="button" data-filter="dark" aria-pressed="false" data-t="dark">深色风格</button><button type="button" data-filter="light" aria-pressed="false" data-t="light">浅色风格</button>
+      </div><span class="result-count" id="result-count" aria-live="polite">6 个模板</span></div>
+      <div class="cards" id="cards"></div>
+      <noscript><div class="fallback"><p>启用 JavaScript 可查看视频并保存选择。也可直接浏览以下原模板：</p><ul><li><a href="https://preview.cruip.com/stellar/">01 Stellar（付费）</a></li><li><a href="https://open.cruip.com/">02 Open（免费）</a></li><li><a href="https://simple.cruip.com/">03 Simple Light（免费）</a></li><li><a href="https://preview.cruip.com/fintech/">04 FinTech（付费）</a></li><li><a href="https://html5up.net/uploads/demos/forty/">05 Forty（免费）</a></li><li><a href="https://html5up.net/uploads/demos/dimension/">06 Dimension（免费）</a></li></ul></div></noscript>
     </section>
-
-    <div class="affiliation-strip"><div class="container affiliation-inner"><p data-i18n="researchOrigin">源于前沿研究，走向真实制造</p><span class="affiliation-name" data-i18n="affiliation">香港科技大学（广州）科技初创项目</span><span class="location" data-i18n="location">广州 · 南沙</span></div></div>
-
-    <section class="section solution-section" id="solution" aria-labelledby="solution-title">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow" data-i18n="solutionEyebrow">01 — 为复杂协作而生</p><h2 id="solution-title"><span data-i18n="solutionLine1">从各自执行，</span><span class="muted-heading" data-i18n="solutionLine2">到协同完成。</span></h2></div><p class="section-intro" data-i18n="solutionDesc">非标制造的挑战，不止是让一只机械臂动起来。共同持物、对齐、紧固与恢复，需要整个系统拥有一致的理解与行动。</p></div>
-        <div class="challenge-grid">
-          <article class="challenge-card"><svg class="icon"><use href="#icon-link"/></svg><span class="card-number">01</span><h3 data-i18n="challenge1Title">强耦合，也能默契配合</h3><p data-i18n="challenge1Desc">共享对象状态与装配关系，让搬运、支撑与工具作业在同一节奏下协同。</p><span class="card-tag" data-i18n="challenge1Tag">共同持物 · 协作装配</span></article>
-          <article class="challenge-card"><svg class="icon"><use href="#icon-cycle"/></svg><span class="card-number">02</span><h3 data-i18n="challenge2Title">换一种任务，延续能力</h3><p data-i18n="challenge2Desc">面向多品种、小批量生产，通过任务技能与数据复用，减少反复示教的负担。</p><span class="card-tag" data-i18n="challenge2Tag">任务复用 · 柔性换型</span></article>
-          <article class="challenge-card"><svg class="icon"><use href="#icon-layers"/></svg><span class="card-number">03</span><h3 data-i18n="challenge3Title">理解异常，重新协同</h3><p data-i18n="challenge3Desc">将错位、滑移与遮挡纳入状态判断，通过主动观察与任务接替恢复协作。</p><span class="card-tag" data-i18n="challenge3Tag">主动观察 · 异常恢复</span></article>
-          <article class="challenge-card"><svg class="icon"><use href="#icon-grid"/></svg><span class="card-number">04</span><h3 data-i18n="challenge4Title">不同本体，同一协作层</h3><p data-i18n="challenge4Desc">以统一接口连接不同机械臂，让品牌、控制频率和时延差异得到系统化适配。</p><span class="card-tag" data-i18n="challenge4Tag">跨本体适配 · 可扩展架构</span></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section technology-section dark-section" id="technology" aria-labelledby="technology-title">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow lavender" data-i18n="techEyebrow">02 — 协同智能的核心</p><h2 id="technology-title"><span data-i18n="techLine1">一个世界模型。</span><span class="lavender" data-i18n="techLine2">连接每一次协作。</span></h2></div><p class="section-intro" data-i18n="techDesc">NCIT 构建位于机器人本体之上的协同智能层，将共享理解、联合预测与协作执行连接成闭环。</p></div>
-        <div class="technology-layout">
-          <div class="world-diagram" role="img" aria-label="共享世界模型连接供料、支撑、紧固和恢复四个协作角色" data-i18n-aria="diagramAlt">
-            <div class="diagram-header"><span>NCIT / SYSTEM ARCHITECTURE</span><span class="diagram-chip" data-i18n="architectureTag">系统架构</span></div>
-            <div class="diagram-input"><span class="diagram-dot"></span><span data-i18n="diagramInput">多视角观测 · 对象状态 · 任务上下文</span></div>
-            <div class="diagram-connector"></div>
-            <div class="world-core"><img src="assets/images/nebulis-mark.webp" alt="" width="48" height="48" loading="lazy"><span data-i18n="worldModel">共享世界模型</span><small data-i18n="worldModelSub">理解状态 · 预测协作 · 更新决策</small></div>
-            <div class="diagram-bus"><span></span><span></span><span></span><span></span></div>
-            <div class="arm-nodes"><div><span class="arm-id">A1</span><strong data-i18n="arm1">供料搬运</strong></div><div><span class="arm-id">A2</span><strong data-i18n="arm2">支撑对齐</strong></div><div><span class="arm-id">A3</span><strong data-i18n="arm3">连接紧固</strong></div><div><span class="arm-id">A4</span><strong data-i18n="arm4">弹性支撑</strong></div></div>
-            <div class="feedback-loop"><svg class="icon"><use href="#icon-cycle"/></svg><span data-i18n="feedback">执行反馈与失败数据，持续更新协作能力</span></div>
-          </div>
-          <div class="technology-explorer"><div class="tech-tabs" role="tablist" aria-label="技术能力" data-i18n-aria="techTabs">
-            <button class="tech-tab active" id="tech-tab-0" role="tab" aria-selected="true" aria-controls="tech-panel" data-tech="0"><span>01</span><span data-i18n="techTab1">共享感知</span><svg class="icon"><use href="#icon-plus"/></svg></button>
-            <button class="tech-tab" id="tech-tab-1" role="tab" aria-selected="false" aria-controls="tech-panel" tabindex="-1" data-tech="1"><span>02</span><span data-i18n="techTab2">联合预测</span><svg class="icon"><use href="#icon-plus"/></svg></button>
-            <button class="tech-tab" id="tech-tab-2" role="tab" aria-selected="false" aria-controls="tech-panel" tabindex="-1" data-tech="2"><span>03</span><span data-i18n="techTab3">异常恢复</span><svg class="icon"><use href="#icon-plus"/></svg></button>
-            <button class="tech-tab" id="tech-tab-3" role="tab" aria-selected="false" aria-controls="tech-panel" tabindex="-1" data-tech="3"><span>04</span><span data-i18n="techTab4">跨本体适配</span><svg class="icon"><use href="#icon-plus"/></svg></button>
-          </div><div class="tech-panel" id="tech-panel" role="tabpanel" aria-labelledby="tech-tab-0" tabindex="0"><p class="tech-panel-kicker" id="tech-kicker">SHARED UNDERSTANDING</p><h3 id="tech-panel-title">看到不同视角，理解同一个现场。</h3><p id="tech-panel-desc">将多机械臂的观测、对象姿态与装配关系组织为共享状态，为任务分工与协作决策提供共同依据。</p></div></div>
-        </div>
-        <div class="platform-foot"><span data-i18n="platformFoot1">面向三臂到四臂的可扩展协作</span><span data-i18n="platformFoot2">连接数据、模型、本体与场景</span></div>
-      </div>
-    </section>
-
-    <section class="section application-section" id="applications" aria-labelledby="application-title">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow" data-i18n="applicationEyebrow">03 — 从具体工位开始</p><h2 id="application-title"><span data-i18n="applicationLine1">一副框架，</span><span class="muted-heading" data-i18n="applicationLine2">开启柔性制造的可能。</span></h2></div><p class="section-intro" data-i18n="applicationDesc">以铝型材定制框架组装为首个场景，围绕共同搬运、支撑对齐和工具紧固，构建三臂、四臂协作闭环。</p></div>
-        <div class="application-layout"><div class="application-media">
-          <div class="media-switch" role="tablist" aria-label="查看场景" data-i18n-aria="sceneTabs"><button class="active" id="scene-tab-lab" role="tab" aria-selected="true" aria-controls="scene-panel" data-scene="lab" data-i18n="labTab">实验室真机</button><button id="scene-tab-sim" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="sim" data-i18n="simTab">协作仿真</button></div>
-          <figure id="scene-panel" role="tabpanel" aria-labelledby="scene-tab-lab"><img id="scene-image" src="assets/images/lab-assembly.webp" alt="团队实验室中机械臂与铝型材框架的真实实验装置" width="1600" height="1200" loading="lazy"><figcaption><span class="caption-index" id="scene-index">FIELD NOTES / 01</span><span id="scene-caption">团队实验室 · 铝型材协作组装实验环境</span></figcaption></figure>
-        </div><div class="application-detail"><div class="application-label" data-i18n="firstScenario">首个应用场景 / 铝型材框架装配</div><ol class="assembly-steps"><li><span>01</span><div><h3 data-i18n="step1Title">供料与主搬运</h3><p data-i18n="step1Desc">抓取型材，送入共享装配区域。</p></div></li><li><span>02</span><div><h3 data-i18n="step2Title">支撑与精确对齐</h3><p data-i18n="step2Desc">稳定保持框架，协调端面与角度。</p></div></li><li><span>03</span><div><h3 data-i18n="step3Title">连接与工具紧固</h3><p data-i18n="step3Desc">放置连接件，协同完成工具作业。</p></div></li><li><span>04</span><div><h3 data-i18n="step4Title">弹性支撑与恢复</h3><p data-i18n="step4Desc">主动观察状态变化，调整角色与动作。</p></div></li></ol><div class="detail-note"><svg class="icon"><use href="#icon-grid"/></svg><p data-i18n="applicationNote">从可量化的装配任务出发，沉淀可复用的技能、数据与交付能力。</p></div></div></div>
-        <div class="scenario-directions"><p data-i18n="directionsLabel">拓展应用方向</p><div><span data-i18n="direction1">线束协同布线</span><span data-i18n="direction2">精密检测与上料</span><span data-i18n="direction3">柔性包装</span><span data-i18n="direction4">大型构件协作</span></div></div>
-      </div>
-    </section>
-
-    <section class="section demo-section dark-section" id="demo" aria-labelledby="demo-title"><div class="container">
-      <div class="section-heading"><div><p class="eyebrow lavender" data-i18n="demoEyebrow">04 — 看见协作发生</p><h2 id="demo-title" data-i18n="demoTitle">不同角色，同一个目标。</h2></div><p class="section-intro" data-i18n="demoDesc">四臂协作组装铝型材框架。观看模拟环境中的协作流程，了解多臂任务如何衔接。</p></div>
-      <div class="demo-stage"><div class="video-topline"><span>NCIT / MULTI-ARM ASSEMBLY</span><span class="video-badge" data-i18n="simulationBadge">仿真演示</span></div><video id="demo-video" controls playsinline preload="none" poster="assets/images/demo-poster.webp" aria-label="四机械臂协作组装铝型材框架仿真视频" data-i18n-aria="videoAlt"><source src="assets/video/multi-arm-demo.mp4" type="video/mp4"><span data-i18n="videoFallback">您的浏览器不支持视频播放，请下载演示视频观看。</span></video><div class="video-bottomline"><p data-i18n="videoCaption">四臂协作 · 铝型材框架组装 · 模拟环境</p><a href="assets/video/multi-arm-demo.mp4" download="NCIT-multi-arm-demo.mp4" data-i18n="downloadVideo">下载演示视频</a></div></div>
-      <div class="research-heading"><h3 data-i18n="researchTitle">建立在持续研发之上</h3><p data-i18n="researchDesc">从仿真训练、通信方法到真机数据采集，连接算法探索与系统实践。</p></div>
-      <div class="research-grid"><article><div class="research-image"><img src="assets/images/simulation-workcell.webp" alt="四机械臂协作装配的模拟环境" data-i18n-alt="researchAlt1" width="1280" height="924" loading="lazy"></div><span class="research-number">01 / WORLD MODEL</span><h3 data-i18n="research1Title">共享世界模型探索</h3><p data-i18n="research1Desc">多臂仿真环境中的状态建模、联合预测与协作方案验证。</p></article><article><div class="research-image"><img src="assets/images/research-multiarm.webp" alt="多机械臂协作仿真训练的连续画面" data-i18n-alt="researchAlt2" width="1400" height="1050" loading="lazy"></div><span class="research-number">02 / MULTI-AGENT LEARNING</span><h3 data-i18n="research2Title">多臂通信与策略学习</h3><p data-i18n="research2Desc">围绕协作任务，开展通信方法与视觉—语言—动作模型的仿真训练。</p></article><article><div class="research-image"><img src="assets/images/research-real-world.webp" alt="真实机械臂在桌面水果分类任务中采集数据" data-i18n-alt="researchAlt3" width="1024" height="768" loading="lazy"></div><span class="research-number">03 / REAL-WORLD DATA</span><h3 data-i18n="research3Title">真机数据与模型微调</h3><p data-i18n="research3Desc">双臂家居协作任务的真机与仿真数据采集，以及模型微调实践。</p></article></div>
-    </div></section>
-
-    <section class="section roadmap-section" id="roadmap" aria-labelledby="roadmap-title"><div class="container">
-      <div class="section-heading"><div><p class="eyebrow" data-i18n="roadmapEyebrow">05 — 从技术到产品</p><h2 id="roadmap-title" data-i18n="roadmapTitle">每一步，走向真实交付。</h2></div><p class="section-intro" data-i18n="roadmapDesc">以 24 个月研发路线连接最小真机闭环、模型迭代、跨本体适配与客户工位验证。</p></div>
-      <div class="roadmap-grid"><article><span class="milestone"></span><p class="roadmap-time" data-i18n="roadmapTime1">01—03 个月</p><h3 data-i18n="roadmap1Title">三臂最小闭环</h3><p data-i18n="roadmap1Desc">完成搬运、保持、对齐与连接的限定真机流程，建立统一数据接口。</p></article><article><span class="milestone"></span><p class="roadmap-time" data-i18n="roadmapTime2">04—09 个月</p><h3 data-i18n="roadmap2Title">共享世界模型 V1</h3><p data-i18n="roadmap2Desc">建立对象与装配关系状态、异常日志和联合动作预测，完成基线比较。</p></article><article><span class="milestone"></span><p class="roadmap-time" data-i18n="roadmapTime3">10—15 个月</p><h3 data-i18n="roadmap3Title">四臂与跨本体 V2</h3><p data-i18n="roadmap3Desc">扩展四臂共同持物、支撑与工具作业，适配第二类机械臂接口。</p></article><article><span class="milestone"></span><p class="roadmap-time" data-i18n="roadmapTime4">16—24 个月</p><h3 data-i18n="roadmap4Title">客户验证与工位复制</h3><p data-i18n="roadmap4Desc">推进边缘部署、连续运行验证，以及第二工位复制与客户验收。</p></article></div>
-      <div class="targets"><div class="targets-label"><span data-i18n="targetsLabel">研发与验收目标</span><small data-i18n="targetsNote">24 个月阶段规划</small></div><div><strong>3–4</strong><span data-i18n="target1">协同机械臂</span></div><div><strong>2–3</strong><span data-i18n="target2">类机械臂接口</span></div><div><strong>≥8<span>h</span></strong><span data-i18n="target3">连续运行验证</span></div><div><strong>≥2</strong><span data-i18n="target4">付费 PoC 或订单</span></div></div>
-    </div></section>
-
-    <section class="section team-section" id="team" aria-labelledby="team-title"><div class="container">
-      <div class="section-heading"><div><p class="eyebrow" data-i18n="teamEyebrow">06 — 跨越研究与产业</p><h2 id="team-title"><span data-i18n="teamLine1">共同的方向，</span><span class="muted-heading" data-i18n="teamLine2">互补的力量。</span></h2></div><p class="section-intro" data-i18n="teamDesc">汇聚多智能体算法、技术产品化与机器人系统工程经验，让科研能力与交付能力在同一个团队相遇。</p></div>
-      <div class="team-grid"><article class="team-card"><div class="portrait"><img src="assets/images/ningxin-su.webp" alt="苏宁馨" data-i18n-alt="name1" width="650" height="975" loading="lazy"><span class="portrait-label">RESEARCH</span></div><div class="team-info"><h3 data-i18n="name1">苏宁馨</h3><p class="team-role" data-i18n="role1">项目负责人 · 首席科学家</p><p data-i18n="bio1">香港科技大学（广州）物联网与机器人学域联聘助理教授，多伦多大学博士。负责多智能体世界模型研发与科研组织。</p><span class="expertise" data-i18n="expertise1">多智能体算法 / 校企研发</span></div></article><article class="team-card"><div class="portrait"><img src="assets/images/shuaijun-liu.webp" alt="刘帅军" data-i18n-alt="name2" width="650" height="975" loading="lazy"><span class="portrait-label">PRODUCT</span></div><div class="team-info"><h3 data-i18n="name2">刘帅军</h3><p class="team-role" data-i18n="role2">拟任 CEO · 技术产品化</p><p data-i18n="bio2">博士生创业者、ayaMaa 联合创始人，曾负责品牌出海业务。推进技术产品化、客户需求定义与公司运营。</p><span class="expertise" data-i18n="expertise2">产品化 / 客户与经营</span></div></article><article class="team-card"><div class="portrait"><img src="assets/images/qingkai-yang.webp" alt="杨庆凯" data-i18n-alt="name3" width="650" height="867" loading="lazy"><span class="portrait-label">ENGINEERING</span></div><div class="team-info"><h3 data-i18n="name3">杨庆凯</h3><p class="team-role" data-i18n="role3">工程与交付负责人</p><p data-i18n="bio3">锐动新创 CEO，曾任乐聚机器人夸父系列核心工程师，具有人形与重载四足机器人研发经验。负责硬件、系统工程与现场交付。</p><span class="expertise" data-i18n="expertise3">机器人系统 / 工程交付</span></div></article></div>
-    </div></section>
-
-    <section class="section collaboration-section" aria-labelledby="collaboration-title"><div class="container"><div class="collaboration-intro"><p class="eyebrow" data-i18n="collabEyebrow">07 — 让能力进入生产</p><h2 id="collaboration-title" data-i18n="collabTitle">与你一起，把协作带到现场。</h2><p data-i18n="collabDesc">面向制造企业、机械臂厂商与系统集成商，提供协同智能层，与合作伙伴共同完成从场景定义到部署复制的每一步。</p></div><div class="cooperation-grid"><article><span>01</span><h3 data-i18n="cooperation1Title">场景共创 · 付费 PoC</h3><p data-i18n="cooperation1Desc">梳理物料、工序与协作需求，明确任务边界、成功率和验收标准，验证最小闭环。</p></article><article><span>02</span><h3 data-i18n="cooperation2Title">工位部署 · 系统适配</h3><p data-i18n="cooperation2Desc">围绕真实工位完成算法适配、模型训练、回归验证与现场验收。</p></article><article><span>03</span><h3 data-i18n="cooperation3Title">持续服务 · 规模复制</h3><p data-i18n="cooperation3Desc">通过年度授权、版本升级、任务包与 OEM 合作，复用数据和技能，拓展更多工位。</p></article></div></div></section>
-
-    <section class="contact-section dark-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow lavender" data-i18n="contactEyebrow">LET’S BUILD TOGETHER</p><h2 id="contact-title"><span data-i18n="contactLine1">下一次协作，</span><span class="lavender" data-i18n="contactLine2">从这里开始。</span></h2><p data-i18n="contactDesc">如果你的生产现场，也有一个需要多臂共同完成的挑战，欢迎与我们交流。</p></div><div class="contact-card"><span class="contact-card-label" data-i18n="contactLabel">项目与研发合作</span><a class="contact-email" href="mailto:ningxinsu@hkust-gz.edu.cn">ningxinsu@hkust-gz.edu.cn</a><p data-i18n="contactPerson">苏宁馨 · 项目负责人</p><a class="button button-primary contact-button" href="mailto:ningxinsu@hkust-gz.edu.cn?subject=NCIT%20Collaboration"><svg class="icon"><use href="#icon-mail"/></svg><span data-i18n="emailUs">邮件联系</span></a><a class="lab-link" href="https://nebulis-lab.com/" target="_blank" rel="noopener noreferrer" data-i18n="visitLab">了解 NEBULIS Lab</a></div></div></section>
+    <footer class="footer"><div><strong data-t="freeCount">4 个免费 · 2 个付费</strong><p data-t="footer">选好后，把编号或复制的选择发回聊天，我再按选定模板改造。</p></div><p data-t="sourceNote">模板设计归原作者所有。这里展示官方演示的截图与短录屏，不包含第三方模板源码。</p></footer>
   </main>
-  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="#"><img src="assets/images/nebulis-mark.webp" width="40" height="40" alt=""><span class="brand-word">NEBULIS<span class="brand-sub" data-i18n="footerBrand">星云协智 · NCIT</span></span></a><p data-i18n="footerMission">让多臂协作，拥有共同的智能。</p><a href="https://github.com/NEBULIS-Lab/NCIT" target="_blank" rel="noopener noreferrer">GitHub</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> NCIT · NEBULIS</span><span data-i18n="footerStatus">香港科技大学（广州）科技初创项目 · 拟落地广州南沙</span><a href="#" data-i18n="backTop">返回顶部</a></div></div></footer>
-  <noscript><div class="noscript-note">当前为中文版。请启用 JavaScript 使用中英文切换与交互功能。 / Enable JavaScript to switch languages and explore interactive content.</div></noscript>
+  <aside class="selection-bar" aria-label="当前选择"><div class="container selection-inner"><div class="selection-summary"><span class="selection-icon" aria-hidden="true">◇</span><div><p id="selection-name" data-t="noSelection">还没有选定模板</p><small id="selection-hint" data-t="noSelectionHint">先看原站与动效，再点击「选这个模板」。</small></div></div><div class="selection-actions"><button class="clear" id="clear" type="button" hidden data-t="clear">清除</button><button class="button primary" id="copy" type="button" disabled data-t="copy">复制我的选择</button></div></div></aside>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="preview-dialog" aria-labelledby="preview-title">
+    <div class="dialog-header"><div><span id="preview-index">01</span><h2 id="preview-title">Stellar</h2><span id="preview-author">Cruip</span></div><button class="close" id="close-preview" type="button" aria-label="关闭">×</button></div>
+    <div class="preview-tabs"><div class="preview-tab-list" role="tablist" aria-label="预览类型"><button id="motion-tab" type="button" role="tab" aria-selected="true" aria-controls="motion-panel" data-mode="motion" data-t="modalMotion">动画实录</button><button id="still-tab" type="button" role="tab" aria-selected="false" aria-controls="still-panel" tabindex="-1" data-mode="still" data-t="modalStill">首页大图</button></div><a id="preview-original" href="https://preview.cruip.com/stellar/" target="_blank" rel="noopener noreferrer" data-t="original">打开原站</a></div>
+    <div class="preview-content"><div class="preview-stage"><div id="motion-panel" role="tabpanel" aria-labelledby="motion-tab"><video id="preview-video" controls playsinline preload="none" muted aria-label="官方模板动效实录"></video><p class="record-caption" data-t="recordLabel">官方演示实录 · 含滚动与点击操作</p></div><div id="still-panel" role="tabpanel" aria-labelledby="still-tab" hidden><img id="preview-image" src="gallery/media/stellar.webp" alt="Stellar 原模板截图" width="1440" height="960"></div><p class="preview-help" data-t="previewInstruction">短录屏用于快速比较；打开原站可以完整体验滚动、鼠标与栏目切换。</p></div><div class="preview-info"><p class="preview-style" id="preview-style"></p><h3 data-t="nativeMotion">模板原生效果</h3><div id="preview-effects" class="effects"></div><h3 data-t="adaptation">用于 NCIT 的改造方向</h3><p id="preview-fit"></p><h3 data-t="licenseHeading">使用与授权</h3><p id="preview-terms"></p><div class="source-links"><a id="preview-source" target="_blank" rel="noopener noreferrer" href="https://cruip.com/stellar/" data-t="source">模板来源</a><a id="preview-license" target="_blank" rel="noopener noreferrer" href="https://cruip.com/terms/" data-t="license">授权说明</a></div><button class="button primary" id="preview-pick" type="button" data-t="pick">选这个模板</button></div></div>
+  </dialog>
+  <dialog id="copy-dialog" aria-labelledby="copy-title"><div class="dialog-header"><h2 id="copy-title" data-t="manualTitle">复制下面的选择</h2><button class="close" id="close-copy" type="button" aria-label="关闭">×</button></div><div class="copy-content"><p data-t="manualHint">自动复制不可用，请手动复制这段文字并发回聊天。</p><textarea id="copy-text" readonly aria-label="模板选择文字"></textarea></div></dialog>
 </body>
 </html>
