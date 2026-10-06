@@ -8,7 +8,7 @@ export default function Header(){
  const [open,setOpen]=useState(false),[active,setActive]=useState('');
  useEffect(()=>{
    const close=(event:KeyboardEvent)=>{if(event.key==='Escape')setOpen(false)};
-   const media=matchMedia('(min-width: 641px)');
+   const media=matchMedia('(min-width: 801px)');
    const reset=()=>setOpen(false);
    addEventListener('keydown',close);media.addEventListener('change',reset);
    const observer=new IntersectionObserver(entries=>{

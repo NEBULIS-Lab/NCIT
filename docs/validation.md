@@ -30,6 +30,12 @@ Validated on 2026-10-07.
 - Text-glyph arrows were replaced with consistent SVG icons. Fullscreen entry/exit and the matching icon state pass browser interaction checks.
 - Main-page WCAG A/AA checks still report zero violations in both languages. The demo build remains byte-identical to the previously validated runtime.
 
+## Readability and multi-arm VLA
+
+- Category labels, roadmap labels and execution feedback text use at least 16px in desktop and mobile checks. Adjacent descriptions, team roles and demonstration controls also use larger supporting type.
+- Both language versions introduce multi-arm VLA in the hero, core technology, architecture diagram, scenario copy and a research summary. The three communication paths, simulation scale and relative traffic result are mapped to the supplied technical attachment in `research-content.md`.
+- Chinese and English layouts pass at 320–1440 CSS pixels, including the longer English research descriptions. Policy links, language persistence, SVG controls, fullscreen and reduced-motion behavior remain verified.
+
 ## Demo1 integration
 
 - The actual local build loads four physical robot instances and 73 bodies.

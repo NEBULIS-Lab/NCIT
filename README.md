@@ -12,7 +12,7 @@ Guangzhou Nebulis Collaborative Intelligence Technology Co., Ltd.
 
 - Chinese and English content, with synchronized controls in the live demo.
 - Interactive four-arm assembly: orbit, zoom, run, pause, reset, camera views and full screen.
-- Shared world model, manufacturing challenges, research foundations, team, roadmap and partnership workflow.
+- Shared world model, collaborative multi-arm VLA, manufacturing challenges, research foundations, team, roadmap and partnership workflow.
 - Responsive navigation, scroll transitions and pointer effects with reduced-motion support.
 - Company and institutional identity drawn from the supplied business deck.
 - Policy context and application opportunities woven into the main prose, with links to official publications.
@@ -43,6 +43,7 @@ Two Vite builds produce `.site/` and `.site/demo1/`. All paths are relative, inc
 - `demo/physics-sources.json`: hashes for the original physics and controllers.
 - `docs/asset-sources.md`: image provenance and content sources.
 - `docs/policy-sources.md`: verified policy publications and their use on the site.
+- `docs/research-content.md`: source mapping for the multi-arm VLA research summary.
 - `THIRD_PARTY_NOTICES.md`: third-party notices.
 
 The website and demo communicate within the same origin. Language changes preserve simulation state. Simulation activity pauses when the panel leaves the viewport or the document becomes hidden.

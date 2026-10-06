@@ -1,5 +1,6 @@
 import {useLanguage} from '../i18n';
 import WorldModel from './world-model';
+import VlaResearch from './vla-research';
 export default function Features() {
   const {t}=useLanguage();
   return (
@@ -32,7 +33,7 @@ export default function Features() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-indigo-200/50">
+            <div className="section-kicker inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-indigo-200/50">
               <span className="inline-flex bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
                 {t('techLabel')}
               </span>
@@ -47,6 +48,7 @@ export default function Features() {
           <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
             <WorldModel />
           </div>
+          <VlaResearch />
           {/* Items */}
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             <article data-aos="fade-up">
